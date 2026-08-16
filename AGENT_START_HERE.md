@@ -16,7 +16,7 @@
 向用户确认：
 
 - 你想解决什么日常问题？
-- 目标是 macOS、Windows、Web，还是多平台？
+- 目标是继续改造 macOS 原生版，还是另行规划跨平台重写？
 - 桌宠是什么角色？它的性格和反馈方式是什么？
 - 第一版必须完成的 3 个功能是什么？
 - 用户如何判断第一版已经可用？
@@ -31,17 +31,9 @@
 ## 平台选择
 
 - macOS 原生桌宠：从 `FocusDockMac/` 开始。
-- 跨平台网页/PWA：从 `app/` 开始。
-- Windows 透明置顶桌宠：优先复用 Web UI，再评估 Tauri 容器和 Windows 特定行为。
+- Windows 透明置顶桌宠：以现有需求、视觉素材和交互逻辑为参考，再评估 Tauri、Electron 或 WinUI；不要声称可直接复用 SwiftUI 实现。
 
 ## 验证命令
-
-Web：
-
-```bash
-npm install
-npm test
-```
 
 macOS：
 

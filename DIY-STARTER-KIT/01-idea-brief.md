@@ -40,7 +40,6 @@
 
 - [ ] macOS
 - [ ] Windows
-- [ ] Web/PWA
 - [ ] 手机
 
 ## 完成标准

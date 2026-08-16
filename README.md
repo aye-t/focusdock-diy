@@ -1,6 +1,6 @@
 # FocusDock DIY
 
-![FocusDock preview](public/og.png)
+![FocusDock preview](docs/assets/focusdock-preview.png)
 
 FocusDock 是一个“桌宠 + 番茄钟 + 节律提醒”实验项目。这个仓库不是一个所有平台下载即用的成熟产品，而是一个可运行、可拆解、可交给 Agent 继续改造的 Vibe Coding 参考案例。
 
@@ -9,8 +9,9 @@ FocusDock 是一个“桌宠 + 番茄钟 + 节律提醒”实验项目。这个�
 ## 它是什么
 
 - 原生 macOS SwiftUI 应用：番茄钟、休息流程、今日计划、节律提醒、菜单栏和桌面宠物。
-- Web/PWA 版本：浏览器中的跨平台体验，使用本地存储保存状态。
 - DIY Starter Kit：需求模板、Agent 对话模板、角色设定表、动作清单、验收和发布检查表。
+
+FocusDock 曾有过早期 Web 实验，但它不包含原生桌面版的悬浮窗口和桌宠体验，也不是作者实际使用的版本，因此不再放入本公开仓库。
 
 ## 先看兼容性
 
@@ -19,29 +20,14 @@ FocusDock 是一个“桌宠 + 番茄钟 + 节律提醒”实验项目。这个�
 | macOS 14+ | 可以下载源码并自行构建原生版 |
 | Apple Silicon Mac | 当前主要开发和验证环境 |
 | Intel Mac | 需要自行生成兼容的构建产物 |
-| Windows / Linux | 可以运行 Web 版；不能直接运行 SwiftUI `.app` |
-| 想做 Windows 桌宠 | 可以让 Agent 把 Web 前端改造为 Tauri/Electron 应用 |
+| Windows / Linux | 不能直接运行这份 SwiftUI `.app` |
+| 想做 Windows 桌宠 | 可以以需求和交互为参考，让 Agent 用 Tauri、Electron 或 WinUI 重新实现 |
 
 ### 关于直接下载 `.app`
 
 仓库暂不提供经 Apple Developer ID 签名和公证的正式发行包。普通用户不应把本仓库当作一个“下载后直接拖入应用程序”的发行页。如果你只想学习或 DIY，按下面的步骤从源码构建即可。
 
 ## 快速开始
-
-### Web/PWA
-
-需要 Node.js `>=22.13.0`。
-
-```bash
-npm install
-npm run dev
-```
-
-默认在本地开发地址打开。检查生产构建：
-
-```bash
-npm test
-```
 
 ### macOS 原生版
 
@@ -84,7 +70,6 @@ Codex Desktop 用户可以直接使用仓库中的 `.codex/environments/environm
 ## 数据和隐私
 
 - macOS 版的个人状态保存在本机。
-- Web 版默认使用浏览器本地存储。
 - Obsidian 联动是可选功能，使用者自行选择本地路径。
 - 仓库不包含作者的个人计划、应用状态、Obsidian 库、本机路径或私人 Agent 记录。
 
@@ -94,11 +79,9 @@ Codex Desktop 用户可以直接使用仓库中的 `.codex/environments/environm
 
 ```text
 FocusDockMac/          macOS SwiftUI 应用
-app/                   React Web/PWA 界面
-public/                Web 图标、manifest 和 Service Worker
 DIY-STARTER-KIT/       用 Agent 复刻方法的模板
+docs/assets/           README 与教程的公开图片
 script/                统一 macOS 构建/运行入口
-tests/                 Web 验证
 ```
 
 ## 这个仓库不是什么
