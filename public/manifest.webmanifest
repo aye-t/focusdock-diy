@@ -1,9 +1,0 @@
-{
-  "name": "FocusDock",
-  "short_name": "FocusDock",
-  "description": "本机优先的专注计时与节律提醒",
-  "start_url": "/",
-  "display": "standalone",
-  "background_color": "#f6f4f7",
-  "theme_color": "#7668a4"
-}

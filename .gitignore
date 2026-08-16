@@ -2,14 +2,9 @@
 .env*
 !.env.example
 node_modules/
-.next/
-.vinext/
-out/
 dist/
 coverage/
 .wrangler/
-.vercel/
-.openai/hosting.json
 
 FocusDockMac/.build/
 FocusDockMac/dist/
